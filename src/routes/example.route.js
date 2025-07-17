@@ -9,5 +9,4 @@ router.get('/:id', exampleControllers.getOneExample);
 router.put('/:id',exampleControllers.updateExample);  
 router.delete('/:id', exampleControllers.deleteExample);  
 
-
 export default router;

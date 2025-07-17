@@ -1,14 +1,5 @@
-// exemplevalidator qui utilise express-validator pour vérifier les données entrantes dans vos routes Express.
-//--> Ce fichier contient des middlewares de validation qui permettent de :
-// Vérifier que les champs envoyés par le client sont corrects (type, présence, longueur, etc.).
-// Empêcher l’enregistrement ou la mise à jour de données invalides.
-// On utilise ici la bibliothèque express-validator, un outil pratique pour gérer la validation de données dans Express.
-
-
-
 import { body } from 'express-validator';
 
-// Validation for creating an example
 export const createExampleValidation = [
     body('name') // Assuming the example has a 'name' field
         .exists().withMessage('Name is required')
